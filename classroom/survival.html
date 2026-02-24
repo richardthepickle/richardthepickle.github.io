@@ -410,6 +410,35 @@
 <script  src="../classroom.js"></script>
 <script>
 (function() {
+    const CHECK_URL = window.location.origin + '/version.txt';
+    const POLL_INTERVAL = 60000;
+    let lastVersion = null;
+
+    async function checkForUpdates() {
+        try {
+            const response = await fetch(CHECK_URL + '?t=' + Date.now());
+            const version = await response.text();
+            
+            if (lastVersion === null) {
+                lastVersion = version;
+            } else if (lastVersion !== version) {
+                window.location.reload();
+            }
+        } catch (error) {
+            console.error('Error checking for updates:', error);
+        }
+    }
+
+    checkForUpdates();
+    setInterval(checkForUpdates, POLL_INTERVAL);
+})();
+</script>
+
+</body>
+</html>
+
+<script>
+(function() {
     document.addEventListener('keydown', function(event) {
         if (event.ctrlKey && event.key.toLowerCase() === 'q' ) {
             window.location.href = 'https://word.cloud.microsoft';
