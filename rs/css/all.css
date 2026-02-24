@@ -292,7 +292,7 @@ template {
 }
 
 html {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -874,7 +874,7 @@ header {
 
 .text-area h1, .text-area h2, .text-area h3, .text-areah4, .text-area h5, .text-area h6 {
     font-weight: bold;
-    font-family: Righteous;
+    font-family: "Inter", sans-serif;
 }
 
 .sticker {
