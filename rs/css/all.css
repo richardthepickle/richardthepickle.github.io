@@ -862,6 +862,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 5px grey, 0 0 5px grey;
     line-height: 2;
+    font-family: "Inter", sans-serif;
 }
 
 .text-area ul, .text-area ol {
