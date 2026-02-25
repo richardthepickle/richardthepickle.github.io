@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 
 
-    <link rel="dns-prefetch" href="https://universal.wgplayer.com"/><script type="text/javascript" async>!function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,a.fetchPriority='high',m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);</script>
-  
-     <meta property="og:image" content="https://eggycarpro.github.io/eggy-car.png">
-    
+    <link rel="dns-prefetch" href="https://universal.wgplayer.com" />
+    <script type="text/javascript"
+        async>!function (e, t) { a = e.createElement("script"), m = e.getElementsByTagName("script")[0], a.async = 1, a.src = t, a.fetchPriority = 'high', m.parentNode.insertBefore(a, m) }(document, "https://universal.wgplayer.com/tag/?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search);</script>
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KLDD9MSETE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLDD9MSETE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-KLDD9MSETE');
-</script>
+        gtag('config', 'G-KLDD9MSETE');
+    </script>
 
 
     <meta charset="utf-8">
@@ -28,273 +28,362 @@
     <meta name="distribution" content="Global">
     <meta http-equiv="audience" content="General">
 
-   <title>Richard the Pickle</title>
+    <title>Richard the Pickle</title>
 
-  <meta name="description" content="a site on the interweb.">
+    <meta name="description" content="a site on the interweb.">
 
 
 
-     
-  <link rel="stylesheet" type="text/css" href="rs/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="rs/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
- 
 
 
- <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    /*  */
-    .navbar {
-      background: #222;
-      padding: 10px 65px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
 
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
+        .navbar {
+            background: #222;
+            padding: 10px 65px;
+        }
 
-    .menu > li {
-      position: relative; /*  */
-    }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-    .menu > li > a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 12px;
-      display: block;
-      font-size: 14px;
-    }
+        .menu>li {
+            position: relative;
+        }
 
-    .menu > li > a:hover {
-      background: #444;
-      border-radius: 4px;
-    }
+        .menu>li>a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            font-size: 14px;
+        }
 
-    /* Submenu  */
-    .submenu {
-      list-style: none;
-      position: absolute;
-      top: 100%;   /* item*/
-      left: 0;
-      min-width: 160px;
-      background: #fff;
-      padding: 8px 0;
-      border-radius: 4px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        .menu>li>a:hover {
+            background: #444;
+            border-radius: 4px;
+        }
 
-      /* hide */
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: all 0.2s ease;
-      z-index: 10;
-    }
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            background: #fff;
+            padding: 8px 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
-    .submenu li a {
-      display: block;
-      padding: 8px 12px;
-      color: #333;
-      text-decoration: none;
-      font-size: 13px;
-      white-space: nowrap;
-    }
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
 
-    .submenu li a:hover {
-      background: #f0f0f0;
-    }
+        .submenu li a {
+            display: block;
+            padding: 8px 12px;
+            color: #333;
+            text-decoration: none;
+            font-size: 13px;
+            white-space: nowrap;
+        }
 
-    /* hover */
-    .menu > li:hover .submenu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-  </style>
+        .submenu li a:hover {
+            background: #f0f0f0;
+        }
+
+        .menu>li:hover .submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 
 
 
 </head>
 
-<body><!--MENU-->
-<header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="p-r d-flex sp al header-bar">
-                <div class="bar-logo">
-                    <a class="logo-text" href="/">Richard the Pickle</a>
-                </div>
-<!--                 <nav class="navigation">
-                    <ul>
-                                                    <li>
-                                <a class="menu-link" href="/drive-mad">
-                                    <span class="text-menu-link">New</span>
-                                </a>
-                            </li>
-                                                    <li>
-                                <a class="menu-link" href="/escape-road">
-                                    <span class="text-menu-link">Popular</span>
-                                </a>
-                            </li>
-                                                    <li>
-                                <a class="menu-link" href="/escape-road-2">
-                                    <span class="text-menu-link">xxx</span>
-                                </a>
-                            </li>
-                    </ul>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="p-r d-flex sp al header-bar">
+                    <div class="bar-logo">
+                        <a class="logo-text" href="/">Richard the Pickle</a>
+                    </div>
 
-                </nav>
- -->
+                    <div style="cursor:pointer;" onclick="location.href='/'">
+
+                    </div>
+                    <center>
+                        <strong class="vibrate-warning nomobile" style="padding-top: 27px;">PRESS CTRL+Q TO HIDE YOUR
+                            SCREEN</strong>
+                    </center>
+
+                    <style>
+                        .vibrate-warning {
+                            animation: vibrate 0.4s infinite;
+                            display: inline-block;
+                        }
+
+                        @keyframes vibrate {
+                            0% {
+                                transform: translate(0);
+                            }
+
+                            20% {
+                                transform: translate(-1px, 1px);
+                            }
+
+                            40% {
+                                transform: translate(-1px, -1px);
+                            }
+
+                            60% {
+                                transform: translate(1px, 1px);
+                            }
+
+                            80% {
+                                transform: translate(1px, -1px);
+                            }
+
+                            100% {
+                                transform: translate(0);
+                            }
+                        }
+
+                        .search-container {
+                            display: flex;
+                            justify-content: center;
+                            padding: 0;
+                            background: transparent;
+                            margin-top: 15px;
+                        }
+
+                        .search-wrapper {
+                            position: relative;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+
+                        .search-input {
+                            width: 100%;
+                            padding: 10px 45px 10px 15px;
+                            font-size: 14px;
+                            font-family: 'Inter', Arial, sans-serif;
+                            border: 1px solid #ddd;
+                            border-radius: 50px;
+                            background: #fff;
+                            color: #333;
+                            outline: none;
+                            transition: all 0.2s ease;
+                        }
+
+                        .search-input:focus {
+                            border-color: #999;
+                            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+                        }
+
+                        .search-input::placeholder {
+                            color: #999;
+                        }
+
+                        .search-icon {
+                            position: absolute;
+                            right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #999;
+                            pointer-events: none;
+                        }
+
+                        .clear-search {
+                            position: absolute;
+                            right: 45px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: none;
+                            border: none;
+                            color: #999;
+                            cursor: pointer;
+                            font-size: 20px;
+                            display: none;
+                            padding: 0 5px;
+                        }
+
+                        .clear-search:hover {
+                            color: #333;
+                        }
+
+                        .search-input:not(:placeholder-shown)~.clear-search {
+                            display: block;
+                        }
+
+                        .no-results {
+                            text-align: center;
+                            padding: 40px 20px;
+                            color: #999;
+                            font-size: 16px;
+                            font-family: 'Inter', Arial, sans-serif;
+                        }
+                    </style>
 
 
 
-         <div style="cursor:pointer;" onclick="location.href='/'">
-
-          </div>
-            <center>
-            <strong class="vibrate-warning nomobile" style="padding-top: 27px;" >PRESS CTRL+Q TO HIDE YOUR SCREEN</strong>
-          </center>
-
-          <style>
-            .vibrate-warning {
-              animation: vibrate 0.4s infinite;
-              display: inline-block;
-            }
-
-            @keyframes vibrate {
-              0% { transform: translate(0); }
-              20% { transform: translate(-1px, 1px); }
-              40% { transform: translate(-1px, -1px); }
-              60% { transform: translate(1px, 1px); }
-              80% { transform: translate(1px, -1px); }
-              100% { transform: translate(0); }
-            }
-          </style>
 
 
 
+                    <nav class="navbar">
+                        <ul class="menu">
 
 
+                            <li><a href="/classroom/new.html">New</a></li>
+                            <li><a href="/classroom/popular.html">Hot</a></li>
+                            <li><a href="/classroom/driving.html">Driving</a></li>
+                            <li>
+                                <a href="#">More</a>
+                                <ul class="submenu">
 
-  <nav class="navbar">
-    <ul class="menu">
-
-    
-      <li><a href="/classroom/new.html">New</a></li>
-      <li><a href="/classroom/popular.html">Hot</a></li>
-      <li><a href="/classroom/driving.html">Driving</a></li>
-      <li>
-        <a href="#">More</a>
-        <ul class="submenu">
-    
-          <li><a href="/classroom/shooting.html">Shooting</a></li>
-          <li><a href="/classroom/car.html">Car</a></li>
-          <li><a href="/classroom/racing.html">Racing</a></li>
-          <li><a href="/classroom/sports.html">Sports</a></li>
-          <li><a href="/classroom/multiplayer.html">Multiplayer</a></li>
-          <li><a href="/classroom/2-player.html">2 Player</a></li>
-          <li><a href="/classroom/skill.html">Skill</a></li>
-          <li><a href="/classroom/running.html">Running</a></li>
-          <li><a href="/classroom/moto.html">Moto</a></li>
-          <li><a href="/classroom/adventure.html">Adventure</a></li>
-          <li><a href="/classroom/3d.html">3D</a></li>
-          <li><a href="/classroom/puzzle.html">Puzzle</a></li>
-          <li><a href="/classroom/simulation.html">Simulation</a></li>
-          <li><a href="/classroom/management.html">Management</a></li>
-          <li><a href="/classroom/survival.html">Survival</a></li>
-          <li><a href="/classroom/strategy.html">Strategy</a></li>
-          <li><a href="/classroom/girls.html">For Girls</a></li>
-          <li><a href="/classroom/animal.html">Animal</a></li>
-          <li><a href="/classroom/action.html">Action</a></li>
-    
-        
-
-      
-    </ul>
-  </nav>
+                                    <li><a href="/classroom/shooting.html">Shooting</a></li>
+                                    <li><a href="/classroom/car.html">Car</a></li>
+                                    <li><a href="/classroom/racing.html">Racing</a></li>
+                                    <li><a href="/classroom/sports.html">Sports</a></li>
+                                    <li><a href="/classroom/multiplayer.html">Multiplayer</a></li>
+                                    <li><a href="/classroom/2-player.html">2 Player</a></li>
+                                    <li><a href="/classroom/skill.html">Skill</a></li>
+                                    <li><a href="/classroom/running.html">Running</a></li>
+                                    <li><a href="/classroom/moto.html">Moto</a></li>
+                                    <li><a href="/classroom/adventure.html">Adventure</a></li>
+                                    <li><a href="/classroom/3d.html">3D</a></li>
+                                    <li><a href="/classroom/puzzle.html">Puzzle</a></li>
+                                    <li><a href="/classroom/simulation.html">Simulation</a></li>
+                                    <li><a href="/classroom/management.html">Management</a></li>
+                                    <li><a href="/classroom/survival.html">Survival</a></li>
+                                    <li><a href="/classroom/strategy.html">Strategy</a></li>
+                                    <li><a href="/classroom/girls.html">For Girls</a></li>
+                                    <li><a href="/classroom/animal.html">Animal</a></li>
+                                    <li><a href="/classroom/action.html">Action</a></li>
 
 
 
 
-                <div class="center-box merge_icon icon-menu-mobile">
-                    <svg fill="#555" height="24" viewBox="0 -21 384 384" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                        <path d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                        <path d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                    </svg>
+                                </ul>
+                    </nav>
+
+
+
+
+                    <div class="center-box merge_icon icon-menu-mobile">
+                        <svg fill="#555" height="24" viewBox="0 -21 384 384" width="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                            <path
+                                d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                            <path
+                                d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--Mobil MENU-->
-
-    <!--END Mobile menu-->
-</header>
-<!--END MENU--><!--GAME PLAY-->
-<div id="game-page" class="main">
-    <div class="container">
-        <div class="row-flex">
-            <div class="main-flex">
+    </header>
+    <div id="game-page" class="main">
+        <div class="container">
+            <div class="row-flex">
+                <div class="main-flex">
 
 
-  
 
-                <br/>
 
-                <div class="row"> <!-- H2 -->
-                    <div class="frame-box-game">
-                        <div class="text-area">
+                    <br />
+
+                    <div class="row">
+                        <div class="frame-box-game">
+                            <div class="text-area">
                                 <div class="text-area--content">
-                                      <h2>Notice</h2>
-                                        <ol>
-                                            <li>Stop gatekeeping this website 💔🥹✌️</li>
-                                        </ol>
+                                    <h2>Notice</h2>
+                                    <ol>
+                                        <li>Stop gatekeeping this website 💔🥹✌️</li>
+                                    </ol>
                                 </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row"> <!-- changelog -->
-                    <div class="frame-box-game">
-                        <div class="text-area">
+                    <div class="row">
+                        <div class="frame-box-game">
+                            <div class="text-area">
                                 <div class="text-area--content">
-                                      <h2>Changelog (2/24/2026 @ 1:06PM)</h2>
-                                        <ol>
-                                            <li>Added auto-update system, if an update is pushed to the site your progress will be saved & the page will automatically be refreshed</li>
-                                            <li>Switched to Inter font</li>
-                                            <li>Cleaned up random boxes</li>
-                                            <li>Rocket Soccer Derby page now shows CJ's username</li>
-                                            <li>Moved Rocket Soccer Derby to the first slot on the front page</li>
-                                        </ol>
+                                    <h2>Changelog (2/25/2026 @ 7:51AM)</h2>
+                                    <ol>
+                                        <li><i>All games</i> are now shown on the front page</li>
+                                        <li>Added a search bar to the front page</li>
+                                    </ol>
                                 </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row"> <!-- others -->
-                    <div class="game-flex" id="ajax-append">
-                        <div style="text-align: center; width: 100%; padding: 20px;">
-                            <p>Loading games...</p>
+                    <div class="row">
+                        <div class="frame-box-game">
+                            <div class="search-container">
+                                <div class="search-wrapper">
+                                    <input type="text" id="game-search" class="search-input"
+                                        placeholder="Search for games..." autocomplete="off">
+                                    <button class="clear-search" id="clear-search" aria-label="Clear search">×</button>
+                                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.35-4.35"></path>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- end row others-->
+
+                    <div class="row">
+                        <div class="game-flex" id="ajax-append">
+                            <div style="text-align: center; width: 100%; padding: 20px;">
+                                <p>Loading games...</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
 
 
 
@@ -302,92 +391,150 @@
 
 
         </div>
-    </div>
-
-            
 
 
 
 
 
-</div>
+        <footer>
+            <script src="rs/js/jquery-3.4.1.min.js"></script>
+            <script src="rs/js/footer.js"></script>
+        </footer>
 
+        <script src="classroom.js"></script>
 
+        <script>
+            let allGames = [];
 
+            (async function () {
+                try {
+                    const response = await fetch('/lessons.json');
+                    const data = await response.json();
 
+                    if (data.lessons && data.lessons.length > 0) {
+                        if (typeof data.lessons[0] === 'string') {
+                            allGames = data.lessons.map(lesson => ({
+                                file: lesson,
+                                name: null
+                            }));
+                        } else {
+                            allGames = data.lessons;
+                        }
+                    }
 
-<footer>
-    <script src="rs/js/jquery-3.4.1.min.js"></script>
-    <script src="rs/js/footer.js"></script>
-</footer>
+                    renderGames(allGames);
+                    setupSearch();
+                } catch (error) {
+                    console.error('Error loading games:', error);
+                    document.getElementById('ajax-append').innerHTML = '<div style="text-align: center; width: 100%; padding: 20px;"><p>Error loading games. Please refresh the page.</p></div>';
+                }
+            })();
 
-<script src="classroom.js"></script>
+            function renderGames(games) {
+                const container = document.getElementById('ajax-append');
 
-<script>
-(async function() {
-    try {
-        const response = await fetch('/lessons.json');
-        const data = await response.json();
-        const container = document.getElementById('ajax-append');
-        
-        container.innerHTML = '';
-        
-        data.lessons.forEach(lesson => {
-            const lessonNumber = lesson.replace('lesson-', '').replace('.html', '');
-            
-            const gameItem = document.createElement('div');
-            gameItem.className = 'game-flex-item';
-            
-            gameItem.innerHTML = `
-                <a class="flex-item" href="/lesson/${lesson}">
-                    <img width="180" height="180" src="https://lesson126.github.io/img/lesson-${lessonNumber}.png" />
-                </a>
-            `;
-            
-            container.appendChild(gameItem);
-        });
-    } catch (error) {
-        console.error('Error loading games:', error);
-        document.getElementById('ajax-append').innerHTML = '<div style="text-align: center; width: 100%; padding: 20px;"><p>Error loading games. Please refresh the page.</p></div>';
-    }
-})();
-</script>
+                if (games.length === 0) {
+                    container.innerHTML = '<div class="no-results">No games found matching your search.</div>';
+                    return;
+                }
 
-<script>
-(function() {
-    const CHECK_URL = window.location.origin + '/version.txt';
-    const POLL_INTERVAL = 60000;
-    let lastVersion = null;
+                container.innerHTML = '';
 
-    async function checkForUpdates() {
-        try {
-            const response = await fetch(CHECK_URL + '?t=' + Date.now());
-            const version = await response.text();
-            
-            if (lastVersion === null) {
-                lastVersion = version;
-            } else if (lastVersion !== version) {
-                window.location.reload();
+                games.forEach(game => {
+                    const lesson = game.file;
+                    const lessonNumber = lesson.replace('lesson-', '').replace('.html', '');
+
+                    const gameItem = document.createElement('div');
+                    gameItem.className = 'game-flex-item';
+                    gameItem.setAttribute('data-lesson', lesson.toLowerCase());
+                    if (game.name) {
+                        gameItem.setAttribute('data-name', game.name.toLowerCase());
+                    }
+
+                    gameItem.innerHTML = `
+            <a class="flex-item" href="/lesson/${lesson}">
+                <img width="180" height="180" src="https://lesson126.github.io/img/lesson-${lessonNumber}.png" alt="${game.name || 'Game ' + lessonNumber}" />
+            </a>
+        `;
+
+                    container.appendChild(gameItem);
+                });
             }
-        } catch (error) {
-            console.error('Error checking for updates:', error);
-        }
-    }
 
-    checkForUpdates();
-    setInterval(checkForUpdates, POLL_INTERVAL);
-})();
-</script>
+            function setupSearch() {
+                const searchInput = document.getElementById('game-search');
+                const clearButton = document.getElementById('clear-search');
 
-<script>
-(function() {
-    document.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.key.toLowerCase() === 'q' ) {
-            window.location.href = 'https://word.cloud.microsoft';
-        }
-    });
-})();
-</script>
+                searchInput.addEventListener('input', function (e) {
+                    const searchTerm = e.target.value.toLowerCase().trim();
+
+                    if (searchTerm === '') {
+                        renderGames(allGames);
+                        return;
+                    }
+
+                    const filteredGames = allGames.filter(game => {
+                        const lessonNumber = game.file.replace('lesson-', '').replace('.html', '');
+                        const matchesNumber = lessonNumber.includes(searchTerm) || game.file.toLowerCase().includes(searchTerm);
+                        const matchesName = game.name && game.name.toLowerCase().includes(searchTerm);
+
+                        return matchesNumber || matchesName;
+                    });
+
+                    renderGames(filteredGames);
+                });
+
+                clearButton.addEventListener('click', function () {
+                    searchInput.value = '';
+                    searchInput.focus();
+                    renderGames(allGames);
+                });
+
+                searchInput.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') {
+                        searchInput.value = '';
+                        renderGames(allGames);
+                    }
+                });
+            }
+        </script>
+
+        <script>
+            (function () {
+                const CHECK_URL = window.location.origin + '/version.txt';
+                const POLL_INTERVAL = 60000;
+                let lastVersion = null;
+
+                async function checkForUpdates() {
+                    try {
+                        const response = await fetch(CHECK_URL + '?t=' + Date.now());
+                        const version = await response.text();
+
+                        if (lastVersion === null) {
+                            lastVersion = version;
+                        } else if (lastVersion !== version) {
+                            window.location.reload();
+                        }
+                    } catch (error) {
+                        console.error('Error checking for updates:', error);
+                    }
+                }
+
+                checkForUpdates();
+                setInterval(checkForUpdates, POLL_INTERVAL);
+            })();
+        </script>
+
+        <script>
+            (function () {
+                document.addEventListener('keydown', function (event) {
+                    if (event.ctrlKey && event.key.toLowerCase() === 'q') {
+                        window.location.href = 'https://word.cloud.microsoft';
+                    }
+                });
+            })();
+        </script>
 
 </body>
+
 </html>
