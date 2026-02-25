@@ -47,87 +47,85 @@
 
 
  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
+        body {
+            font-family: "Inter", sans-serif;
+            background: #111111;
+        }
 
-    /*  */
-    .navbar {
-      background: #222;
-      padding: 10px 65px;
-    }
+        .navbar {
+            padding: 10px 65px;
+        }
 
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-    .menu > li {
-      position: relative; /*  */
-    }
+        .menu>li {
+            position: relative;
+        }
 
-    .menu > li > a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 12px;
-      display: block;
-      font-size: 14px;
-    }
+        .menu>li>a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            font-size: 14px;
+            border-radius: 50px;
+        }
 
-    .menu > li > a:hover {
-      background: #444;
-      border-radius: 4px;
-    }
+        .menu>li>a:hover {
+            background: #fff;
+            color: #000;
+            border-radius: 50px;
+        }
 
-    /* Submenu  */
-    .submenu {
-      list-style: none;
-      position: absolute;
-      top: 100%;   /* item*/
-      left: 0;
-      min-width: 160px;
-      background: #fff;
-      padding: 8px 0;
-      border-radius: 4px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            background: #111;
+            padding: 8px 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
-      /* hide */
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: all 0.2s ease;
-      z-index: 10;
-    }
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
 
-    .submenu li a {
-      display: block;
-      padding: 8px 12px;
-      color: #333;
-      text-decoration: none;
-      font-size: 13px;
-      white-space: nowrap;
-    }
+        .submenu li a {
+            display: block;
+            padding: 8px 12px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            white-space: nowrap;
+        }
 
-    .submenu li a:hover {
-      background: #f0f0f0;
-    }
+        .submenu li a:hover {
+            background: #fff;
+            color: #000;
+        }
 
-    /* hover */
-    .menu > li:hover .submenu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-  </style>
+        .menu>li:hover .submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
 
 
 
@@ -135,123 +133,187 @@
 
 <body><!--MENU-->
 <header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="p-r d-flex sp al header-bar">
-                <div class="bar-logo">
-                    <a class="logo-text" href="/">Richard the Pickle</a>
-                </div>
-<!--                 <nav class="navigation">
-                    <ul>
-                                                    <li>
-                                <a class="menu-link" href="/drive-mad">
-                                    <span class="text-menu-link">New</span>
-                                </a>
-                            </li>
-                                                    <li>
-                                <a class="menu-link" href="/escape-road">
-                                    <span class="text-menu-link">Popular</span>
-                                </a>
-                            </li>
-                                                    <li>
-                                <a class="menu-link" href="/escape-road-2">
-                                    <span class="text-menu-link">Eggy Car</span>
-                                </a>
-                            </li>
-                    </ul>
+        <div class="container">
+            <div class="row">
+                <div class="p-r d-flex sp al header-bar">
+                    <div class="bar-logo">
+                        <a class="logo-text" href="/">Richard the Pickle</a>
+                    </div>
 
-                </nav>
- -->
+                    <div style="cursor:pointer;" onclick="location.href='/'">
+
+                    </div>
+                    <center>
+                        <strong class="vibrate-warning nomobile" style="padding-top: 5px;">PRESS CTRL+Q TO HIDE YOUR
+                            SCREEN</strong>
+                    </center>
+
+                    <style>
+                        .vibrate-warning {
+                            animation: vibrate 0.4s infinite;
+                            display: inline-block;
+                            color: #fff;
+                        }
+
+                        @keyframes vibrate {
+                            0% {
+                                transform: translate(0);
+                            }
+
+                            20% {
+                                transform: translate(-1px, 1px);
+                            }
+
+                            40% {
+                                transform: translate(-1px, -1px);
+                            }
+
+                            60% {
+                                transform: translate(1px, 1px);
+                            }
+
+                            80% {
+                                transform: translate(1px, -1px);
+                            }
+
+                            100% {
+                                transform: translate(0);
+                            }
+                        }
+
+                        .search-container {
+                            display: flex;
+                            justify-content: center;
+                            padding: 0;
+                            background: transparent;
+                            margin-top: 15px;
+                        }
+
+                        .search-wrapper {
+                            position: relative;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+
+                        .search-input {
+                            width: 100%;
+                            padding: 10px 45px 10px 15px;
+                            font-size: 14px;
+                            font-family: 'Inter', Arial, sans-serif;
+                            border: 1px solid #333;
+                            border-radius: 50px;
+                            background: #111;
+                            color: #999;
+                            outline: none;
+                            transition: all 0.2s ease;
+                        }
+
+                        .search-input:focus {
+                            border-color: #999;
+                            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+                        }
+
+                        .search-input::placeholder {
+                            color: #999;
+                        }
+
+                        .search-icon {
+                            position: absolute;
+                            right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: #999;
+                            pointer-events: none;
+                        }
+
+                        .clear-search {
+                            position: absolute;
+                            right: 45px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: none;
+                            border: none;
+                            color: #999;
+                            cursor: pointer;
+                            font-size: 20px;
+                            display: none;
+                            padding: 0 5px;
+                        }
+
+                        .clear-search:hover {
+                            color: #333;
+                        }
+
+                        .search-input:not(:placeholder-shown)~.clear-search {
+                            display: block;
+                        }
+
+                        .no-results {
+                            text-align: center;
+                            padding: 40px 20px;
+                            color: #999;
+                            font-size: 16px;
+                            font-family: 'Inter', Arial, sans-serif;
+                        }
+                    </style>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="/classroom/new.html">New</a></li>
+                            <li><a href="/classroom/popular.html">Hot</a></li>
+                            <li><a href="/classroom/driving.html">Driving</a></li>
+                            <li>
+                                <a href="#">More</a>
+                                <ul class="submenu">
+
+                                    <li><a href="/classroom/shooting.html">Shooting</a></li>
+                                    <li><a href="/classroom/car.html">Car</a></li>
+                                    <li><a href="/classroom/racing.html">Racing</a></li>
+                                    <li><a href="/classroom/sports.html">Sports</a></li>
+                                    <li><a href="/classroom/multiplayer.html">Multiplayer</a></li>
+                                    <li><a href="/classroom/2-player.html">2 Player</a></li>
+                                    <li><a href="/classroom/skill.html">Skill</a></li>
+                                    <li><a href="/classroom/running.html">Running</a></li>
+                                    <li><a href="/classroom/moto.html">Moto</a></li>
+                                    <li><a href="/classroom/adventure.html">Adventure</a></li>
+                                    <li><a href="/classroom/3d.html">3D</a></li>
+                                    <li><a href="/classroom/puzzle.html">Puzzle</a></li>
+                                    <li><a href="/classroom/simulation.html">Simulation</a></li>
+                                    <li><a href="/classroom/management.html">Management</a></li>
+                                    <li><a href="/classroom/survival.html">Survival</a></li>
+                                    <li><a href="/classroom/strategy.html">Strategy</a></li>
+                                    <li><a href="/classroom/girls.html">For Girls</a></li>
+                                    <li><a href="/classroom/animal.html">Animal</a></li>
+                                    <li><a href="/classroom/action.html">Action</a></li>
 
 
 
-         <div style="cursor:pointer;" onclick="location.href='/'">
 
-          </div>
-            <center>
-            <strong class="vibrate-warning nomobile" style="padding-top: 27px;" >PRESS CTRL+Q TO HIDE YOUR SCREEN</strong>
-          </center>
-
-          <style>
-            .vibrate-warning {
-              animation: vibrate 0.4s infinite;
-              display: inline-block;
-            }
-
-            @keyframes vibrate {
-              0% { transform: translate(0); }
-              20% { transform: translate(-1px, 1px); }
-              40% { transform: translate(-1px, -1px); }
-              60% { transform: translate(1px, 1px); }
-              80% { transform: translate(1px, -1px); }
-              100% { transform: translate(0); }
-            }
-          </style>
+                                </ul>
+                    </nav>
 
 
 
 
-
-
-  <nav class="navbar">
-    <ul class="menu">
-
-      
- 
-      <li><a href="/classroom/new.html">New</a></li>
-      <li><a href="/classroom/popular.html">Hot</a></li>
-      <li><a href="/classroom/driving.html">Driving</a></li>
-      <li>
-        <a href="#">More</a>
-        <ul class="submenu">
-    
-          <li><a href="/classroom/shooting.html">Shooting</a></li>
-          <li><a href="/classroom/car.html">Car</a></li>
-          <li><a href="/classroom/racing.html">Racing</a></li>
-          <li><a href="/classroom/sports.html">Sports</a></li>
-          <li><a href="/classroom/multiplayer.html">Multiplayer</a></li>
-          <li><a href="/classroom/2-player.html">2 Player</a></li>
-          <li><a href="/classroom/skill.html">Skill</a></li>
-          <li><a href="/classroom/running.html">Running</a></li>
-          <li><a href="/classroom/moto.html">Moto</a></li>
-          <li><a href="/classroom/adventure.html">Adventure</a></li>
-          <li><a href="/classroom/3d.html">3D</a></li>
-          <li><a href="/classroom/puzzle.html">Puzzle</a></li>
-          <li><a href="/classroom/simulation.html">Simulation</a></li>
-          <li><a href="/classroom/management.html">Management</a></li>
-          <li><a href="/classroom/survival.html">Survival</a></li>
-          <li><a href="/classroom/strategy.html">Strategy</a></li>
-          <li><a href="/classroom/girls.html">For Girls</a></li>
-          <li><a href="/classroom/animal.html">Animal</a></li>
-          <li><a href="/classroom/action.html">Action</a></li>
-    
-        
-
-      
-    </ul>
-  </nav>
-
-
-
-
-                <div class="center-box merge_icon icon-menu-mobile">
-                    <svg fill="#555" height="24" viewBox="0 -21 384 384" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                        <path d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                        <path d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
-                        </path>
-                    </svg>
+                    <div class="center-box merge_icon icon-menu-mobile">
+                        <svg fill="#555" height="24" viewBox="0 -21 384 384" width="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                            <path
+                                d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                            <path
+                                d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--Mobil MENU-->
-
-    <!--END Mobile menu-->
-</header>
+    </header>
 <!--END MENU--><!--GAME PLAY-->
 <div id="game-page" class="main">
     <div class="container">

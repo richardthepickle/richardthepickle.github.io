@@ -51,12 +51,11 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: "Inter", sans-serif;
+            background: #111111;
         }
 
         .navbar {
-            background: #222;
             padding: 10px 65px;
         }
 
@@ -76,11 +75,13 @@
             padding: 8px 12px;
             display: block;
             font-size: 14px;
+            border-radius: 50px;
         }
 
         .menu>li>a:hover {
-            background: #444;
-            border-radius: 4px;
+            background: #fff;
+            color: #000;
+            border-radius: 50px;
         }
 
         .submenu {
@@ -89,7 +90,7 @@
             top: 100%;
             left: 0;
             min-width: 160px;
-            background: #fff;
+            background: #111;
             padding: 8px 0;
             border-radius: 4px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -104,14 +105,15 @@
         .submenu li a {
             display: block;
             padding: 8px 12px;
-            color: #333;
+            color: #fff;
             text-decoration: none;
             font-size: 13px;
             white-space: nowrap;
         }
 
         .submenu li a:hover {
-            background: #f0f0f0;
+            background: #fff;
+            color: #000;
         }
 
         .menu>li:hover .submenu {
@@ -138,7 +140,7 @@
 
                     </div>
                     <center>
-                        <strong class="vibrate-warning nomobile" style="padding-top: 27px;">PRESS CTRL+Q TO HIDE YOUR
+                        <strong class="vibrate-warning nomobile" style="padding-top: 5px;">PRESS CTRL+Q TO HIDE YOUR
                             SCREEN</strong>
                     </center>
 
@@ -146,6 +148,7 @@
                         .vibrate-warning {
                             animation: vibrate 0.4s infinite;
                             display: inline-block;
+                            color: #fff;
                         }
 
                         @keyframes vibrate {
@@ -193,10 +196,10 @@
                             padding: 10px 45px 10px 15px;
                             font-size: 14px;
                             font-family: 'Inter', Arial, sans-serif;
-                            border: 1px solid #ddd;
+                            border: 1px solid #333;
                             border-radius: 50px;
-                            background: #fff;
-                            color: #333;
+                            background: #111;
+                            color: #999;
                             outline: none;
                             transition: all 0.2s ease;
                         }
@@ -250,15 +253,8 @@
                         }
                     </style>
 
-
-
-
-
-
                     <nav class="navbar">
                         <ul class="menu">
-
-
                             <li><a href="/classroom/new.html">New</a></li>
                             <li><a href="/classroom/popular.html">Hot</a></li>
                             <li><a href="/classroom/driving.html">Driving</a></li>
@@ -319,12 +315,7 @@
             <div class="row-flex">
                 <div class="main-flex">
 
-
-
-
-                    <br />
-
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="frame-box-game">
                             <div class="text-area">
                                 <div class="text-area--content">
@@ -335,16 +326,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="row">
                         <div class="frame-box-game">
                             <div class="text-area">
                                 <div class="text-area--content">
-                                    <h2>Changelog (2/25/2026 @ 7:51AM)</h2>
+                                    <h2>Changelog <span style="background: linear-gradient(135deg, #d4b920, #9c6f1b); color: #fff; padding: 2px 8px; border-radius: 12px; font-size: 16px; font-weight: 600; margin-left: 4px; vertical-align: middle;">NEW!</span></h2>
                                     <ol>
-                                        <li><i>All games</i> are now shown on the front page</li>
-                                        <li>Added a search bar to the front page</li>
+                                        <li>The entire site is now dark themed</li>
+                                        <li>Added all available games to the front page</li>
+                                        <li>Added search bar to the front page</li>
                                     </ol>
                                 </div>
                             </div>

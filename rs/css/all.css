@@ -305,7 +305,7 @@ html {
 body {
     font-size: 15.5px;
     line-height: 1.6;
-    background-color: #f2f2f2;
+    background-color: #111;
     font-weight: 700;
     color: #4a4a4a;
     overflow-wrap: break-word;
@@ -594,9 +594,8 @@ input, button {
 header {
     position: relative;
     width: 100%;
-    background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
-    background-color: #f9f9f9;
+    background-color: #111;
 }
 
 .header-bar {
@@ -606,7 +605,7 @@ header {
 
 .logo-text {
     font-size: 26px;
-    text-transform: capitalize;
+    color: #fff;
 }
 
 .navigation>ul {
@@ -671,7 +670,7 @@ header {
 .search-desktop {
     position: absolute;
     right: 0;
-    background-color: #fff;
+    background-color: #111;
     border-top: 3px solid #13aff0;
     top: 100%;
     padding: 15px;
@@ -762,7 +761,7 @@ header {
     border-radius: 15px;
     opacity: 0.9;
     transition: 0.3s;
-    box-shadow: 0 0 8px grey, 0 0 8px grey;
+    box-shadow: 0 0 8px #000, 0 0 8px #000;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -773,15 +772,14 @@ header {
 
 .flex-item:hover img {
     opacity: 1;
-    transform: scale(1.11);
-    transition-delay: 0.2s;
+    transform: scale(1.05);
     box-shadow: 0 0 1px grey, 0 0 1px grey;
 }
 
 .header-game-title {
     text-align: center;
     text-transform: capitalize;
-    color: #333;
+    color: #fff;
     line-height: 24px;
 }
 
@@ -858,11 +856,11 @@ header {
     max-width: 100%;
     overflow: hidden;
     text-overflow: clip;
-    border: 1px solid whitesmoke;
+    border: 1px solid #333;
     border-radius: 10px;
-    box-shadow: 0 0 5px grey, 0 0 5px grey;
     line-height: 2;
     font-family: "Inter", sans-serif;
+    color: #fff;
 }
 
 .text-area ul, .text-area ol {
@@ -945,7 +943,7 @@ header {
     box-sizing: border-box;
     /* padding: 5px 10px; */
     text-align: left;
-    background-color: #333;
+    /* background-color: #333; */
     /* min-height: 50px; */
 }
 
@@ -980,10 +978,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header-game-extend>span:hover {
-    background-color: #222;
 }
 
 .header-game-extend>span>svg {
