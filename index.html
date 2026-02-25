@@ -336,6 +336,7 @@
                                     <ol>
                                         <li>The entire site is now dark themed</li>
                                         <li>Added all available games to the front page</li>
+                                        <li>Added game name under game icon</li>
                                         <li>Added search bar to the front page</li>
                                     </ol>
                                 </div>
@@ -446,6 +447,7 @@
                     gameItem.innerHTML = `
             <a class="flex-item" href="/lesson/${lesson}">
                 <img width="180" height="180" src="https://lesson126.github.io/img/lesson-${lessonNumber}.png" alt="${game.name || 'Game ' + lessonNumber}" />
+                <div class="header-flex-item"><a class="text-overflow header-game-title" href="/lesson/lesson-132.html">${game.name || "Game " + lessonNumber}</a></div>
             </a>
         `;
 
